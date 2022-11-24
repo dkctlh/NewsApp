@@ -12,6 +12,11 @@
 		806237E0292FD8B400FB7D22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806237DF292FD8B400FB7D22 /* ContentView.swift */; };
 		806237E2292FD8B500FB7D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806237E1292FD8B500FB7D22 /* Assets.xcassets */; };
 		806237E5292FD8B500FB7D22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806237E4292FD8B500FB7D22 /* Preview Assets.xcassets */; };
+		806237F0292FD93F00FB7D22 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806237EF292FD93F00FB7D22 /* NewsModel.swift */; };
+		806237F2292FD97000FB7D22 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806237F1292FD97000FB7D22 /* CategoryModel.swift */; };
+		806237F5292FD9B700FB7D22 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806237F4292FD9B700FB7D22 /* HomePage.swift */; };
+		806237FC292FDAF900FB7D22 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 806237FB292FDAF900FB7D22 /* Kingfisher */; };
+		80623800292FDC3000FB7D22 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806237FF292FDC3000FB7D22 /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,10 @@
 		806237DF292FD8B400FB7D22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		806237E1292FD8B500FB7D22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		806237E4292FD8B500FB7D22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		806237EF292FD93F00FB7D22 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		806237F1292FD97000FB7D22 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		806237F4292FD9B700FB7D22 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		806237FF292FDC3000FB7D22 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806237FC292FDAF900FB7D22 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				806237DD292FD8B400FB7D22 /* NewsApp.swift */,
-				806237DF292FD8B400FB7D22 /* ContentView.swift */,
+				806237F9292FDA3E00FB7D22 /* Controller */,
+				806237F6292FD9F500FB7D22 /* View */,
+				806237F3292FD98B00FB7D22 /* Model */,
 				806237E1292FD8B500FB7D22 /* Assets.xcassets */,
 				806237E3292FD8B500FB7D22 /* Preview Content */,
 			);
@@ -92,6 +104,32 @@
 				806237E4292FD8B500FB7D22 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		806237F3292FD98B00FB7D22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				806237EF292FD93F00FB7D22 /* NewsModel.swift */,
+				806237F1292FD97000FB7D22 /* CategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		806237F6292FD9F500FB7D22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				806237F4292FD9B700FB7D22 /* HomePage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		806237F9292FDA3E00FB7D22 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				806237FF292FDC3000FB7D22 /* CategoryView.swift */,
+				806237DF292FD8B400FB7D22 /* ContentView.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +165,9 @@
 			dependencies = (
 			);
 			name = "News Watch App";
+			packageProductDependencies = (
+				806237FB292FDAF900FB7D22 /* Kingfisher */,
+			);
 			productName = "News Watch App";
 			productReference = 806237D8292FD8B400FB7D22 /* News Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +199,9 @@
 				Base,
 			);
 			mainGroup = 806237CB292FD8B300FB7D22;
+			packageReferences = (
+				806237FA292FDAF900FB7D22 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 806237D3292FD8B400FB7D22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -192,6 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806237F5292FD9B700FB7D22 /* HomePage.swift in Sources */,
+				806237F0292FD93F00FB7D22 /* NewsModel.swift in Sources */,
+				80623800292FDC3000FB7D22 /* CategoryView.swift in Sources */,
+				806237F2292FD97000FB7D22 /* CategoryModel.swift in Sources */,
 				806237E0292FD8B400FB7D22 /* ContentView.swift in Sources */,
 				806237DE292FD8B400FB7D22 /* NewsApp.swift in Sources */,
 			);
@@ -442,6 +490,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		806237FA292FDAF900FB7D22 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		806237FB292FDAF900FB7D22 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 806237FA292FDAF900FB7D22 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 806237CC292FD8B300FB7D22 /* Project object */;
 }
